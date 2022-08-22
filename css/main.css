@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile1 {
+    width: 30%;
+    height: 350px;
+    background-image: url(../images/cairo.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile2 {
+    width: 30%;
+    height: 350px;
+    background-image: url(../images/dubai.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile3 {
+    width: 30%;
+    height: 350px;
+    background-image: url(../images/doha.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: large;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.6s;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+}
+
+.caption:hover {
+    opacity: 1;
+}
+
+.profile1:hover .caption {
+    top: 0%;
+    right: 0%;
+    transform: rotate(360deg);
+}
+
+.profile2:hover .caption {
+    top: 0%;
+    right: 0%;
+    transform: rotate(360deg);
+}
+
+.profile3:hover .caption {
+    top: 0%;
+    right: 0%;
+    transform: rotate(360deg);
+}
+
+.caption h1 {
+    padding: 5px 0px;
+}
+
+.caption p {
+    padding: 10px;
+}
+
+.caption i {
+    font-size: 35px;
+    margin: 10px;
+    color: white;
+}
+
+.social {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    margin: 0px;
+    padding: 10PX;
+    text-align: center;
+}
+
+.bord {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin: 20px;
+    width: 25%;
+    margin: auto;
+    color: aliceblue;
+
+}
+
+.clear {
+    clear: both;
+    height: 20px;
+}
+
+@media(max-width:750px) {
+    .row {
+        display: block;
+      
+
+
+    }
+
+    .profile1,
+    .profile2,
+    .profile3 {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .bord {
+        width: 70%;
+      
+    }
+
+}
